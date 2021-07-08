@@ -5,3 +5,10 @@ $('.slider').slick({
     dots: true,
     arrows: true
 });
+
+const bar = document.querySelector('.humburger_btn');
+const list = document.querySelector('.cen-list');
+
+bar.onclick = function () {
+    list.style.right= '-80%';
+}

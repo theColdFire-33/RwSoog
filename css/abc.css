@@ -89,6 +89,9 @@ font-family: 'Nunito', sans-serif;
 .nav .cen-list li.active a {
   color: #00a88f;
 }
+.humburger_btn {
+  display: none;
+}
 @media screen and (max-width: 768px) {
   .nav {
     line-height: 50px;
@@ -102,7 +105,6 @@ font-family: 'Nunito', sans-serif;
     justify-content: flex-end;
     text-align: center;
     list-style: none;
-    flex: 2;
     position: fixed;
     line-height: 28px;
     font-family: sans-serif;
@@ -112,6 +114,7 @@ font-family: 'Nunito', sans-serif;
     background: #333;
     top: 0;
     height: 100vh;
+    transition: 0.4s ease;
   }
   .nav .cen-list li a {
     display: inline-block;
@@ -121,6 +124,21 @@ font-family: 'Nunito', sans-serif;
   .nav .cen-list li {
   }
   .nav .cen-list li a {
+  }
+  .humburger_btn {
+    background-color: #444;
+    color: #00a88f;
+    height: 25px;
+    width: 25px;
+    position: absolute;
+    top: 15px;
+    left: -25px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    padding: 5px;
+    cursor: pointer;
   }
 }
 /* ==================== header and image =================== */
@@ -170,21 +188,29 @@ font-family: 'Nunito', sans-serif;
   font-size: 15px;
   color: #00a88f;
   font-weight: bold;
-  background: #fff;
+  background-color: #00a88f;
   padding: 12px 25px;
   border-radius: 25px;
   box-shadow: 0 10px 10px rgb(24 195 22 / 20%);
   cursor: pointer;
+  color: #fff;
   transition: 0.5s linear;
+  position: relative;
+  overflow: hidden;
 }
-.hdr button:first-of-type {
-  background-color: #00a88f;
-  color: #fff;
+.hdr button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -25px;
+  background-color: rgba(253, 253, 253, 0.795);
+  height: 100%;
+  width: 20px;
+  transition: 0.5s linear;
+  transform: skewX(20deg);
 }
-.hdr button:hover,
-.hdr button:active {
-  background: #2a454e;
-  color: #fff;
+.hdr button:hover::before {
+  left: 160%;
 }
 @media screen and (max-width: 768px) {
   .hdr {
