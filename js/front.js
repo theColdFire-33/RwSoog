@@ -6,9 +6,10 @@ $('.slider').slick({
     arrows: true
 });
 
+// humburger mnue
+
 const bar = document.querySelector('.humburger_btn');
 const list = document.querySelector('.cen-list');
-
 bar.onclick = function () {
     list.classList.toggle('open');
 }
