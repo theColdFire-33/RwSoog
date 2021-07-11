@@ -6,14 +6,20 @@ $('.slider').slick({
     arrows: true
 });
 
+// play sound on click on humburger mnue ...
+function play() {
+    var audio = document.getElementById("audio");
+    audio.play();
+  }
+
 // humburger mnue
 
 const bar = document.querySelector('.humburger_btn');
 const list = document.querySelector('.cen-list');
+
 bar.onclick = function () {
     list.classList.toggle('open');
 }
-
 
 // jump to top onclick home button ..
 $("a[href='#home']").click(function() {
