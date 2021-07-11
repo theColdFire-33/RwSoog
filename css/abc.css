@@ -579,3 +579,19 @@ footer {
   opacity: 1;
 }
 /* end scroll to top button */
+
+/* start check box trick */
+/* @media screen and (max-width: 768px)  */
+#check {
+  display: none;
+}
+label #cancel {
+  display: none;
+}
+#check:checked ~ label #btn {
+  display: none;
+}
+#check:checked ~ label #cancel {
+  display: block;
+}
+/* end check box trick */

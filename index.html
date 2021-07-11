@@ -19,13 +19,15 @@
       <h2 class="logo"><span>in</span>come</h2>
     </div>
     <ul class="cen-list">
-      <li class="active"><a href="#home">Home</a></li>
-      <li><a href="#skils">Skils</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#contact">Contact</a></li>
-      <button class="humburger_btn" onclick="play()">
-        <i class="fa fa-bars" aria-hidden="true"></i>
-      </button>
+      <li class="active"><a onclick="play()" href="#home">Home</a></li>
+      <li><a onclick="play()" href="#skils">Skils</a></li>
+      <li><a onclick="play()" href="#about">About</a></li>
+      <li><a onclick="play()" href="#contact">Contact</a></li>
+      <input type="checkbox" id="check">
+      <label for="check" class="humburger_btn">
+        <i class="fas fa-bars" id="btn" onclick="play()"></i>
+      <i class="fas fa-times" id="cancel" onclick="play()"></i>
+      </label>
     </ul>
   </div>
   <!-- =============== Header and image =============== -->
