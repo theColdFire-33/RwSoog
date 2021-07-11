@@ -91,6 +91,8 @@ body {
 }
 .humburger_btn {
   display: none;
+  outline: none;
+  border: none;
 }
 @media screen and (max-width: 768px) {
   .nav {
@@ -540,12 +542,17 @@ body {
   }
 }
 /* footer */
-.footer {
-}
-.footer::before {
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #444;
+  padding: 5px;
+  font-size: 12px;
+  background-color: #eee;
+  font-family: "jura", sans-serif;
 }
 /* footer */
-
 /* start scroll to top button */
 #myBtn {
   display: none;
