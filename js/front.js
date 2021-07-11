@@ -20,6 +20,11 @@ const list = document.querySelector('.cen-list');
 bar.onclick = function () {
     list.classList.toggle('open');
 }
+// add and remove the active class from li ...
+$('.cen-list li').click(function() {
+  $(this).addClass('active_link').siblings().removeClass('active_link');
+});
+
 
 // jump to top onclick home button ..
 $("a[href='#home']").click(function() {

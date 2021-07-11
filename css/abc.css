@@ -65,10 +65,6 @@ body {
   color: #666;
   position: relative;
 }
-.nav .cen-list li {
-  margin: 0%;
-  padding: 0%;
-}
 .nav .cen-list li a::before {
   width: 0%;
   content: "";
@@ -86,8 +82,8 @@ body {
 .nav .cen-list li a:hover {
   color: var(--mainColor);
 }
-.nav .cen-list li.active a {
-  color: var(--mainColor);
+.nav .cen-list li.active_link a {
+  color: var(--mainColor) !important;
 }
 .humburger_btn {
   display: none;
