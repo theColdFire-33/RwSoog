@@ -483,6 +483,7 @@ body {
   justify-content: center;
   align-items: center;
   width: 90%;
+  height: 100vh;
   padding: 40px;
   margin: 40px auto;
   background-color: #fff;
@@ -524,6 +525,7 @@ body {
   .plan {
     width: auto;
     margin: 40px 40px;
+    height: auto;
   }
   .plan p {
     font-size: 24px;
@@ -537,3 +539,34 @@ body {
     margin-bottom: 25px;
   }
 }
+/* footer */
+.footer {
+}
+.footer::before {
+}
+/* footer */
+
+/* start scroll to top button */
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: var(--mainColor);
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+#myBtn i {
+  color: #fff;
+  transform: rotate(-90deg);
+}
+#myBtn:hover {
+  background-color: #555;
+}
+/* end scroll to top button */
